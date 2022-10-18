@@ -28,8 +28,15 @@ function myFunction() {
 
   console.log("hello".length, "hello".toUpperCase());
 
-  throw true;
+  const arr = ["hello", true, 1];
 
+  for(let i=0; i<arr.length;i++){
+    console.log(arr[i]);
+  }
+
+  for(let cont of arr){
+    console.log(cont);
+  }
 
 }
 
